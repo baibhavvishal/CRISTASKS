@@ -29,10 +29,6 @@ public class StationMngmnt {
             private Date validFrom;
             private Date validTo;
 
-            // Constructors
-            public StationMngmt() {
-            }
-
             public StationMngmt(Long id, String stationCode, String stationName, String stationFullName, char principleFlag, String hindiNameAsciiName, String stnNameUtf, Short mstZoneMasterId, String zoneCode, String gauge, char displayFlag, char stationStatusFlag, char outStnFlag, String hillStnFlag, Short mstDivisionMasterId, Short mstStateMasterId, Short mstDistrictMasterId, String tehshil, String pincode, String latLongCord, String country, Date validFrom, Date validTo) {
                 this.id = id;
                 this.stationCode = stationCode;
@@ -59,7 +55,6 @@ public class StationMngmnt {
                 this.validTo = validTo;
             }
 
-            // Getters
             public Long getId() {
                 return id;
             }
@@ -245,7 +240,6 @@ public class StationMngmnt {
                 this.validTo = validTo;
             }
 
-            // Overriding toString()
             @Override
             public String toString() {
                 return "StationMngmt{" +
@@ -275,7 +269,6 @@ public class StationMngmnt {
                         '}';
             }
 
-            // Overriding equals()
             @Override
             public boolean equals(Object o) {
                 if (this == o) return true;
@@ -306,11 +299,7 @@ public class StationMngmnt {
                         Objects.equals(validTo, that.validTo);
             }
 
-            // Overriding hashCode()
-            @Override
-            public int hashCode() {
-                return Objects.hash(id, stationCode, stationName, stationFullName, principleFlag, hindiNameAsciiName, stnNameUtf, mstZoneMasterId, zoneCode, gauge, displayFlag, stationStatusFlag, outStnFlag, hillStnFlag, mstDivisionMasterId, mstStateMasterId, mstDistrictMasterId, tehshil, pincode, latLongCord, country, validFrom, validTo);
-            }
+            
         }
 
     }
