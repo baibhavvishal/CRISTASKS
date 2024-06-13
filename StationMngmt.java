@@ -57,7 +57,7 @@ public class StationMngmt {
         this.validTo = validTo;
     }
 
-    // Getters and Setters
+    // Getters
     public Long getId() {
         return id;
     }
@@ -242,12 +242,11 @@ public class StationMngmt {
     public void setValidTo(Date validTo) {
         this.validTo = validTo;
     }
-    // (same as before, omitted for brevity)
 
     // Overriding toString()
     @Override
     public String toString() {
-        return "StationMaster{" +
+        return "StationMngmt{" +
                 "id=" + id +
                 ", stationCode='" + stationCode + '\'' +
                 ", stationName='" + stationName + '\'' +
@@ -279,7 +278,7 @@ public class StationMngmt {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        StationMaster that = (StationMaster) o;
+        StationMngmt that = (StationMngmt) o;
         return principleFlag == that.principleFlag &&
                 displayFlag == that.displayFlag &&
                 stationStatusFlag == that.stationStatusFlag &&
